@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign Up</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="image">
-            <p class="credits">Photo by <a href="https://unsplash.com/@setsj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">set.sj</a> on <a href="https://unsplash.com/t/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  </p>
+      <div class="left-part">
+        <div class="logo">
+          <img src="assets/logo.png" alt="logo" />
+          <p class="logo-text">PAMBALATH</p>
         </div>
-        <div class="form">
-            <div class="intro">
-                <p class="title">Join AS Photo Gallery </p>
-                <p class="subtitle">Only Place to display your Photos</p>
+        <div class="credits">
+          Photo by
+          <a
+            href="https://unsplash.com/@setsj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >set.sj</a
+          >
+          on
+          <a
+            href="https://unsplash.com/@setsj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+
+      <div class="right-part">
+        
+          <div class="about">
+            <p id="big">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut iusto
+              pariatur maiores corrupti culpa reprehenderit, soluta aperia
+            </p>
+            <p id="small">Lorem ipsum dolor sit</p>
+          </div>
+          <form action="/index.html" method="post" class="form">
+            <div class="form-contents">
+              <p>Let's Do This!</p>
+              <div class="row">
+                <div class="input">
+                  <label for="firstName">First Name</label>
+                  <input type="text" name="firstName" id="firstName" required/>
+                  
+                </div>
+                <div class="input">
+                  <label for="secondName">Second Name</label>
+                  <input type="text" name="secondName" id="secondName" required/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input">
+                  <label for="phone">Phone</label>
+                  <input type="tel" name="phone" id="phone">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" required>
+                  <p class="password-strength"></p>
+                </div>
+                <div class="input">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" name="confirmPassword" id="confirmPassword" required>
+                  <p class="confirm-match"></p>
+                </div>
+              </div>
+              <div class="row">
+                <button type="submit">Create Account</button>
+              </div>
+               <p class="log-in">Already have an account? <a href="">Log In</a></p>
             </div>
-        </div>
+          </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
