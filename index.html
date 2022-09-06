@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Sign Up</title>
   </head>
@@ -11,7 +12,7 @@
     <div class="container">
       <div class="left-part">
         <div class="logo">
-          <img src="assets/logo.png" alt="logo" />
+          <img src="assets/odin-lined.png" alt="logo" class="logo-pic"/>
           <p class="logo-text">PAMBALATH</p>
         </div>
         <div class="credits">
@@ -29,56 +30,98 @@
       </div>
 
       <div class="right-part">
-        
-          <div class="about">
-            <p id="big">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut iusto
-              pariatur maiores corrupti culpa reprehenderit, soluta aperia
-            </p>
-            <p id="small">Lorem ipsum dolor sit</p>
-          </div>
-          <form action="/index.html" method="post" class="form">
-            <div class="form-contents">
-              <p>Let's Do This!</p>
-              <div class="row">
-                <div class="input">
-                  <label for="firstName">First Name</label>
-                  <input type="text" name="firstName" id="firstName" required/>
-                  
-                </div>
-                <div class="input">
-                  <label for="secondName">Second Name</label>
-                  <input type="text" name="secondName" id="secondName" required/>
-                </div>
+        <div class="about">
+          <p id="big">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut iusto
+            pariatur maiores corrupti culpa reprehenderit, soluta aperia
+          </p>
+          <p id="small">Lorem ipsum dolor sit</p>
+        </div>
+        <form action="/index.html" method="post" class="form">
+          <div class="form-contents">
+            <p>Let's Do This!</p>
+            <div class="row">
+              <div class="form-control">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="James"
+                  required
+                />
+                <small>error message</small>
               </div>
-              <div class="row">
-                <div class="input">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" required>
-                </div>
-                <div class="input">
-                  <label for="phone">Phone</label>
-                  <input type="tel" name="phone" id="phone">
-                </div>
+              <div class="form-control">
+                <label for="secondName">Second Name</label>
+                <input
+                  type="text"
+                  name="secondName"
+                  id="secondName"
+                  placeholder="Popsys"
+                  required
+                />
+                <small>error message</small>
               </div>
-              <div class="row">
-                <div class="input">
-                  <label for="password">Password</label>
-                  <input type="password" name="password" id="password" required>
-                  <p class="password-strength"></p>
-                </div>
-                <div class="input">
-                  <label for="confirmPassword">Confirm Password</label>
-                  <input type="password" name="confirmPassword" id="confirmPassword" required>
-                  <p class="confirm-match"></p>
-                </div>
-              </div>
-              <div class="row">
-                <button type="submit">Create Account</button>
-              </div>
-               <p class="log-in">Already have an account? <a href="">Log In</a></p>
             </div>
-          </form>
+            <div class="row">
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="mail@temp.com"
+                  required
+                />
+                <small>error message</small>
+              </div>
+              <div class="form-control">
+                <label for="phone">Phone</label>
+                <input
+                  type="number tel  "
+                  name="phone"
+                  id="phone"
+                  placeholder="987540352375"
+                  required
+                />
+                <small>error message</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                  placeholder="Password"
+                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  required
+                />
+                <small>error message</small>
+                <p class="password-strength"></p>
+              </div>
+              <div class="form-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  required
+                  placeholder="Confirm Password"
+                />
+                <small>error message</small>
+                <p class="confirm-match"></p>
+              </div>
+            </div>
+            <div class="row">
+              <button type="submit">Create Account</button>
+            </div>
+            <p class="log-in">Already have an account? <a href="">Log In</a></p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
